@@ -2,7 +2,7 @@
 
 include("oauth.php"); 
 
-$page_title = "お気に入り"; 
+$page_title = "Favoris"; 
 include("head.php"); 
 
 if(isset($_GET["username"]) && preg_match("/^[0-9a-zA-Z_]{1,15}$/",$_GET["username"])) 
@@ -56,7 +56,7 @@ else
 { 
 
 ?> 
-エラーが発生しました<br> 
+Une erreur est surveunue<br> 
 <?php 
 
  } 
@@ -66,7 +66,7 @@ else
 
 ?> 
 <form action="" method="get"> 
-<input type="text" name="username" class="input_text" placeholder="ユーザーネーム" value=""> 
+<input type="text" name="username" class="input_text" placeholder="Nom d'utilisateur" value=""> 
 <input type="submit" class="input_submit" value="送信"> 
 </form> 
 <?php 
